@@ -103,7 +103,7 @@ function myTweets() {
   var params = { screen_name: "celia70093923", count: 20 };
   client.get("statuses/user_timeline", params, function (error, tweets, response) {
     if (!error) {
-      console.log("======================== CELIA'S MOST RECENT 20 TWEETS: ========================");
+      console.log("======================== Daniels'S MOST RECENT 20 TWEETS: ========================");
       for (var i = 0; i < tweets.length; i++) {
         console.log("Tweet No." + (i + 1) + ": " + tweets[i].text);
         console.log("Created at: " + tweets[i].created_at);
